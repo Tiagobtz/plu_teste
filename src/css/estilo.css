@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu-de-navegacao {
+    background-color: rgb(86, 214, 86);
+}
+
+#lista {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 15px black;
+    margin-bottom: 10px;
+}
+
+.produtos span {
+    margin-top: 5px;
+    font-weight: 700;
+}

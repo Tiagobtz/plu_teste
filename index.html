@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setor hortifruti</title>
+    
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo-380.css">
+    <link rel="stylesheet" href="src/css/responsivo-650.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="menu-de-navegacao" class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img id="logo" src="src/imagens/logo-plu-search-setores.png" alt="Logo do PLU-Search">
+          </a>
+          <form class="d-flex" role="search">
+            <input id="caixa-busca" class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search">
+            <button id="botao-busca" class="btn btn-success" type="button" onclick="buscarProduto()">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+      <section id="painel">
+        <ul id="lista">
+          <li>
+            <div class="produtos" id="abacaxi">
+              <img src="src/imagens/abacaxi.jpg" alt="">
+              <span>Abacaxi</span>
+              <span>PLU: 888</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="banana">
+              <img src="src/imagens/banana.jpg" alt="">
+              <span>Banana</span>
+              <span>PLU: 6286</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="laranja">
+              <img src="src/imagens/laranja.jpg" alt="">
+                <span>Laranja</span>
+                <span>PLU: 953</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="limao">
+              <img src="src/imagens/limao.jpg" alt="">
+                <span>Limão</span>
+                <span>PLU: 963</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="maca">
+              <img src="src/imagens/maca.jpg" alt="">
+                <span>Maçã</span>
+                <span>PLU: 970</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="mamao-formosa">
+              <img src="src/imagens/mamao-formosa.jpg" alt="">
+              <span>Mamão formosa</span>
+              <span>PLU: 987</span>
+          </li>
+          <li>
+            <div class="produtos" id="melancia">
+              <img src="src/imagens/melancia.jpg" alt="">
+              <span>Melancia</span>
+              <span>PLU: 895</span>
+            </div>
+          </li>
+          <li>
+            <div class="produtos" id="morango">
+              <img src="src/imagens/morango.jpg" alt="">
+              <span>Morango</span>
+              <span>PLU: 10885</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <script src="interacao.js"></script>
+</body>
+</html>
