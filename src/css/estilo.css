@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
 }
