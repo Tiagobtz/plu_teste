@@ -1,6 +1,7 @@
 function buscarProduto(){
-    let valorDaBusca = document.getElementById('caixa-busca').value.toLowerCase();
-    let produtos = document.querySelectorAll(".produtos");
+    let valorDaBusca = document.getElementById('caixa-busca').value.toLowerCase()
+    let lista = document.getElementById('lista')
+    let produtos = document.querySelectorAll(".produtos")
 
     // Criação de um objeto
     let nomesDosProdutos = {
@@ -18,6 +19,7 @@ function buscarProduto(){
     if (nomesDosProdutos[valorDaBusca] !== undefined){
         const produto = nomesDosProdutos[valorDaBusca]
         produtos[produto].scrollIntoView({behavior: 'smooth'})
+        produtos[produto].className = ''
         location.href = `#{valorDaBusca.replace(/\s/g, '-')}`
     }
 }
