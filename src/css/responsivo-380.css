@@ -4,6 +4,11 @@
         margin-bottom: 20px;
     }
 
+    #lista {
+        gap: 50px;
+        font-size: 10px;
+    }
+
     .produtos img {
         width: 100px;
         border-radius: 10px;
