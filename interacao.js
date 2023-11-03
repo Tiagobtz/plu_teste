@@ -19,7 +19,6 @@ function buscarProduto(){
     if (nomesDosProdutos[valorDaBusca] !== undefined){
         const produto = nomesDosProdutos[valorDaBusca]
         produtos[produto].scrollIntoView({behavior: 'smooth'})
-        produtos[produto].className = ''
         location.href = `#{valorDaBusca.replace(/\s/g, '-')}`
     }
 }
