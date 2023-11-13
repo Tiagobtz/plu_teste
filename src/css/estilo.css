@@ -32,6 +32,16 @@ body {
     align-items: center;
 }
 
+.produtos.efeito-destaque {
+    border: solid 2px green;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .produtos img {
     width: 150px;
     border-radius: 10px;
