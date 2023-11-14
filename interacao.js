@@ -12,7 +12,6 @@ function buscarProduto(){
         'melancia': 6,
         'morango': 7,
     }
-    console.log(nomesDosProdutos[laranja])
 
     produtos.forEach(produto => {
         produto.classList.remove("efeito-destaque")
