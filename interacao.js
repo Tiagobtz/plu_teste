@@ -21,7 +21,7 @@ function buscarProduto(){
     if (nomeDosProdutos[valorDaBusca] !== undefined){
         let produto = nomeDosProdutos[valorDaBusca]
         produtos[produto].scrollIntoView({behavior: 'smooth'})
-        location.href = `#${valorDaBusca.replace(/\s/g, '-')}`
+        window.location.href = `#${valorDaBusca.replace(/\s/g, '-')}`
         produtos[produto].classList.add("efeito-destaque")
         produtos[produto].style.opacity = 1
     }
