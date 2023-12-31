@@ -5,12 +5,11 @@
     }
 
     #lista {
-        gap: 50px;
-        font-size: 10px;
+        margin-right: 20px;
     }
 
     .produtos img {
-        width: 100px;
+        width: 90px;
         border-radius: 10px;
         box-shadow: 3px 4px 15px black;
         margin-bottom: 10px;
