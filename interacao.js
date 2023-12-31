@@ -2,7 +2,7 @@ function buscarProduto(){
     let valorDaBusca = document.getElementById("caixa-busca").value.toLowerCase()
     let produtos = document.querySelectorAll(".produtos")
     
-    let nomeDosProdutos = {
+    let listaDeProdutos = {
         'abacaxi': 0,
         'banana': 1,
         'laranja': 2,
@@ -14,19 +14,18 @@ function buscarProduto(){
     }
 
     produtos.forEach(produto => {
-        produto.classList.remove('efeito-destaque')
-        produto.style.opacity = 0.3
+        produto.classList.remove("efeito-destaque")
+        produto.style.opacity = 0.3 
     })
     
-    if (nomeDosProdutos[valorDaBusca] !== undefined){
-        let produto = nomeDosProdutos[valorDaBusca]
+    if (listaDeProdutos[valorDaBusca] !== undefined){
+        let produto = listaDeProdutos[valorDaBusca]
         produtos[produto].scrollIntoView({behavior: "smooth"})
         window.location.href = `#${valorDaBusca.replace(/\s/g, '-')}`
         produtos[produto].classList.add('efeito-destaque')
         produtos[produto].style.opacity = 1
     }
 }
-
 
 /*
 if (valorDaBusca === 'abacaxi'){
